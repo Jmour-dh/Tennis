@@ -5,8 +5,8 @@ services:
         image: postgres:16
         environment:
             POSTGRES_DB: tennis_aeor
-            POSTGRES_USER: dhia
-            POSTGRES_PASSWORD: 7BxD3pxUU00LeYhhqzb2h2xw1o0jDfq2
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
         ports:
             - "5432:5432"
         volumes:
